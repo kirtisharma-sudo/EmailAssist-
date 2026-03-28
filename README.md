@@ -202,10 +202,5 @@ Thanks to open-source libraries, AI frameworks, and community tools that support
 
 ---
 
-If you want, I can also prepare:
-📌 **Logo for EmailAssist**
-📌 **GitHub repo description**
-📌 **Product poster / project banner**
-📌 **Short YouTube-style walkthrough script**
-📌 **Setup.sh automation script**
+
 
