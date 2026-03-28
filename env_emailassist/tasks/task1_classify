@@ -1,0 +1,10 @@
+from openenv import Task
+
+
+class TaskClassify(Task):
+    def __init__(self):
+        super().__init__(
+            id="emailassist_classify",
+            description="Classify each email thread as {Work, Personal, ClientRequest, Spam, Info, Meeting}.",
+            difficulty="easy",
+        )
