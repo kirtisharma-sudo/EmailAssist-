@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pydantic==1.10.12
+openenv
+python-dotenv
+typing-extensions
