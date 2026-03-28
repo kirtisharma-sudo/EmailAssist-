@@ -74,20 +74,27 @@ Understands user input to generate the most suitable email format.
 
 ## 📂 **Project Structure**
 
-```id="1dsf04"
-├── backend
-│   ├── server.js
-│   ├── routes/
-│   ├── controllers/
-│   ├── ai/
-│   │   └── emailAssistEngine.py
+```
+emailassist/
 │
-├── frontend
-│   ├── src/
-│   ├── components/
-│   ├── pages/
-│   └── utils/
+├── env_emailassist/
+│   ├── __init__.py
+│   ├── env.py
+│   ├── models.py
+│   ├── openenv.yaml
+│   ├── tasks/
+│   │   ├── task1_classify.py
+│   │   ├── task2_priority.py
+│   │   └── task3_drafting.py
+│   └── graders/
+│       ├── classify_grader.py
+│       ├── priority_grader.py
+│       └── drafting_grader.py
 │
+├── app.py                 ← FastAPI server (HF Space)
+├── inference.py           ← Baseline (MANDATORY)
+├── Dockerfile
+├── requirements.txt
 └── README.md
 ```
 
