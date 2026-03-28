@@ -1,0 +1,33 @@
+id: emailassist
+name: EmailAssist
+version: 1.0.0
+description: >
+  A full real-world Email Triage, Prioritization, and Reply Drafting environment.
+  Simulates a multi-thread, multi-sender inbox with realistic metadata, and
+  supports 3 OpenEnv tasks with deterministic graders.
+
+type: environment
+
+authors:
+  - name: "Your Name"
+    email: "your.email@example.com"
+
+license: apache-2.0
+
+tasks:
+  - id: emailassist_classify
+    description: "Classify each email thread as {Work, Personal, ClientRequest, Spam, Info, Meeting}"
+    difficulty: easy
+  - id: emailassist_priority
+    description: "Assign priorities (1–5) to threads based on urgency and importance."
+    difficulty: medium
+  - id: emailassist_drafting
+    description: "Draft professional replies to threads requiring response."
+    difficulty: hard
+
+entry_point: env_emailassist.env:EmailAssistEnv
+
+observation_model: env_emailassist.models.Observation
+action_model: env_emailassist.models.Action
+reward_model: env_emailassist.models.Reward
+state_model: env_emailassist.models.State
